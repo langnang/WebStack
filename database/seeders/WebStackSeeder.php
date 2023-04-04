@@ -316,6 +316,7 @@ class WebStackSeeder extends Seeder
           ],
           [
             "url" => "https://eleduck.com/",
+            "ico" => "https://eleduck.com/static/favicon.ico",
             "title" => "电鸭社区",
             "type" => "site",
             "text" => "国内最早的远程工作社区，也是互联网工作者们的聚集地，非常适合设计开发小伙伴关注"

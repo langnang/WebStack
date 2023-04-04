@@ -131,6 +131,12 @@
           </ul>
           <ul class="user-info-menu right-links list-inline list-unstyled">
             <li class="hidden-sm hidden-xs">
+              <a href="/admin">
+                <img src="./public/vendor/dcat-admin/images/logo.png" alt="" width="18">
+                Admin
+              </a>
+            </li>
+            <li class="hidden-sm hidden-xs">
               <a href="https://github.com/langnang/WebStack" target="_blank">
                 <i class="fa-github"></i> GitHub
               </a>
@@ -250,10 +256,15 @@
           </div>
           <!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
           <div class="go-up">
-            <a href="./icons" style="display:none;">
-              图标库
+            <a href="https://fontawesome.com/icons" target="_blank">
+              FontAwesome
+              <i class="fa fa-arrow-up-right-from-square"></i>
             </a>
             &nbsp;
+            <a href="https://v3.bootcss.com/components/#glyphicons" target="_blank">
+              Glyphicons
+              <i class="fa fa-arrow-up-right-from-square"></i>
+            </a>
             &nbsp;
             <a href="#" rel="go-top">
               <i class="fa-angle-up"></i>

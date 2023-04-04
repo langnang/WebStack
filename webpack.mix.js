@@ -40,6 +40,7 @@ mix.copyDirectory('node_modules/autosize/dist', 'public/vendor/autosize');
 
 mix.copyDirectory('node_modules/lozad/dist', 'public/vendor/lozad');
 
+mix.copyDirectory('vendor/dcat/laravel-admin/resources/dist', 'public/vendor/dcat-admin')
 
 mix.copyDirectory('resources/images', 'public/images');
 

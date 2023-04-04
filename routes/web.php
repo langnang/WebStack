@@ -32,13 +32,14 @@ Route::view('/about', 'about', ['branches' => $branches]);
 Route::view('/404', '404', ['branches' => $branches]);
 
 Route::get('/{slug?}', function ($slug = 'default') use ($branches) {
+  // return $branches;
   for ($i = 0; $i < count($branches); $i++) {
     if ($branches[$i]->slug == $slug) $branch = $branches[$i];
   }
-  if (empty($branch)) return redirect('/404');
+  // if (empty($branch)) return redirect('/404');
   $contents = \App\Models\WebStackMeta::with(['children'])
     ->with(['contents'])
-    ->where([['type', 'category'], ['parent', 1], ['status', 'public']])
+    ->where([['type', 'category'], ['parent', $branch->mid], ['status', 'public']])
     ->get();
   // return $contents;
   return view('index', [
